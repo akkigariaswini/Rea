@@ -32,7 +32,7 @@ attributes.uriParams.serviceType]]></ee:set-variable>
 				<logger level="INFO" doc:name="Logger" doc:id="aeeb2590-a9d3-45ae-ae34-926919aef3de" message="routes flow called for TravelOnTip external system for transactionid #[attributes.headers.transactionid]"/>
 				<flow-ref doc:name="Flow Reference" doc:id="f9f2d8bc-e679-4957-a35d-24d012072b7d" name="TravelOnTip-GetRoutes-implementationFlow"/>
 			</when>
-			<when expression='#[vars.serviceType == "schedule"]'>
+			<when expression='#[vars.serviceType == "schedules"]'>
 				<logger level="INFO" doc:name="Logger" doc:id="1a043425-0657-47be-a48d-ad3bb166cb21" message="schedule flow called for TravelOnTip external system for transactionid #[attributes.headers.transactionid]"/>
 				<flow-ref doc:name="Flow Reference" doc:id="5dd3cd69-7053-4d62-a328-41d0d45d8746" name="TravelOnTip-GetSchedules-implementationFlow"/>
 			</when>
